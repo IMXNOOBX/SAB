@@ -1,0 +1,5 @@
+name: SimpleAntiBot
+version: '${project.version}'
+main: imxnoobx.sab.SimpleAntiBot
+api-version: 1.19
+authors: [ IMXNOOBX ]

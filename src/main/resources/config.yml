@@ -1,0 +1,29 @@
+#   **  github.com/IMXNOOBX                **
+#   **  Version: 1.0.1      	           **
+#   **  github.com/IMXNOOBX/SimpleAntiBot  **
+
+
+#===============================================#
+#                    CHAT                       #
+#===============================================#
+# bypass: sab.chat.*
+# all the permissions given to users will allow them to bypass that feature/check
+chat-protection: true
+
+# bypass: sab.chat.move
+# this check only will apply when the user joins the server
+move-before-chat: true # new players have to move before sending a message
+move-before-chat-block: 5 # amount of blocks that the new player has to move before sending a message
+move-before-chat-message: "&cYou must move {blocks} before sending a message." # use {blocks} to let the user know how many blocks has to move
+
+# bypass: sab.chat.ansi
+block-non-ansi-characters: true
+
+# bypass: sab.chat.blacklist
+message-blacklist:
+  enabled: true
+  custom-regex-blacklist:
+    - '\b((\d{1,2}|2(5[0-5]|[0-4]\d))[._,)(-]+){3}(\d{1,2}|2(5[0-5]|[0-4]\d))(:\d{2,7})?'
+    - '(?i)\b(https?:\/\/)?[\w\.а-яА-Я-]+\.([a-z]{2,4}|[рР][фФ]|[уУ][кК][рР])\b(:\d{2,7})?(\/\S+)?'
+
+chat-blocked-message: "&cYour message is forbidden in this server."
