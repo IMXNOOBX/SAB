@@ -9,6 +9,9 @@ class onPlayerJoin : Listener {
 
     @EventHandler
     fun onPlayerJoinEvent(event: PlayerJoinEvent) {
+        if (event.isCancelled())
+            return
+            
         val player = event.player;
 
         HelperMain.playerLocations[player.uniqueId] = player.location

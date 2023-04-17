@@ -6,9 +6,8 @@ import imxnoobx.sab.events.onPlayerJoin
 import imxnoobx.sab.events.onPlayerMove
 import org.bukkit.plugin.java.JavaPlugin
 
-
 class SimpleAntiBot : JavaPlugin() {
-    val version = "1.0.1"
+    val version = "1.0.2"
 
     override fun onEnable() {
         // Plugin startup logic
@@ -22,6 +21,7 @@ class SimpleAntiBot : JavaPlugin() {
         server.pluginManager.registerEvents(onPlayerJoin(), this)
         server.pluginManager.registerEvents(onPlayerChat(), this)
         server.pluginManager.registerEvents(onPlayerMove(), this)
+        server.pluginManager.registerEvents(onPlayerCommand(), this)
 
         logger.info("plugin load finished, loaded version: " + version)
     }

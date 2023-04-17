@@ -3,3 +3,7 @@ version: '${project.version}'
 main: imxnoobx.sab.SimpleAntiBot
 api-version: 1.19
 authors: [ IMXNOOBX ]
+commands:
+  chat:
+    description: Simple Anti Bot commands and settings!
+    aliases: [sab, simpleantibot]
