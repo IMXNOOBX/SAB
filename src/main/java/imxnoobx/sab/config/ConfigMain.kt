@@ -15,6 +15,4 @@ object ConfigMain {
     fun readConfig(): FileConfiguration {
         return config
     }
-
-    // You can add more functions here to read and write values to the config.
 }
